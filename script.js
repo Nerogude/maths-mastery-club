@@ -364,8 +364,15 @@ function submitAssessment() {
 
     assessmentData.score = score;
 
-    // Save assessment data
+    // Save assessment data locally
     saveAssessmentData();
+
+    // Send to Google Sheets (non-blocking)
+    if (window.googleSheetsLogger) {
+        googleSheetsLogger.logAssessment(assessmentData).catch(error => {
+            console.log('Google Sheets logging failed (app continues normally):', error);
+        });
+    }
 
     // Show results
     showResults();
