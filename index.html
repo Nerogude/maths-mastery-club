@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Mastery Club - Expert Maths Tuition for Year 2-6</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <header>
+                <h1 class="logo">Maths Mastery Club</h1>
+            </header>
+            <div class="hero-content">
+                <h2 class="hero-title">Expert Maths Support for African & Nigerian Kids in the UK</h2>
+                <p class="hero-description">
+                    African kids in the UK often start strong in maths, but schools don't always stretch them.
+                    Maths Mastery Club ensures they stay ahead with structured practice, expert support, and measurable results.
+                </p>
+                <a href="#contact" class="cta-button primary">Book a Call</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Parents Choose Us -->
+    <section id="why-choose-us" class="section">
+        <div class="container">
+            <h2>Why Parents Choose Maths Mastery Club</h2>
+            <div class="pain-points">
+                <div class="pain-point">
+                    <h3>Struggling with Maths Yourself?</h3>
+                    <p>Some parents find it challenging to help with modern maths methods.</p>
+                </div>
+                <div class="pain-point">
+                    <h3>Can't Explain Concepts Clearly?</h3>
+                    <p>Understanding maths and teaching it are different skills entirely.</p>
+                </div>
+                <div class="pain-point">
+                    <h3>No Time for Homework Support?</h3>
+                    <p>Busy schedules make it hard to provide consistent maths support.</p>
+                </div>
+                <div class="pain-point">
+                    <h3>Find Tutoring Too Expensive?</h3>
+                    <p>Many tuition centres and private tutors charge premium rates.</p>
+                </div>
+            </div>
+            <div class="solution">
+                <p><strong>Maths Mastery Club solves all these challenges with expert teaching, tailored practice, and affordable pricing.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Club -->
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <h2>About Maths Mastery Club</h2>
+            <p class="about-description">
+                Our mission is to help African and Nigerian kids in the UK build confidence and excellence in maths.
+                We use a mastery approach: strong foundations, rigorous practice, and clear tracking of progress.
+            </p>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="section">
+        <div class="container">
+            <h2>Benefits of Joining</h2>
+            <ul class="benefits-list">
+                <li>Strong foundations in core maths skills</li>
+                <li>Measurable progress tracked over time</li>
+                <li>Tailored support based on a baseline assessment</li>
+                <li>Confidence and readiness for 11+ and future challenges</li>
+                <li>Stress-free homework support (for parents)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Baseline Assessment -->
+    <section id="assessment" class="section bg-light">
+        <div class="container">
+            <h2>Free Baseline Assessment</h2>
+            <p>Complete our quick assessment to understand your child's current maths level and receive personalized recommendations.</p>
+
+            <form id="parent-form" class="parent-form">
+                <div class="form-group">
+                    <label for="parent-name">Parent Name:</label>
+                    <input type="text" id="parent-name" name="parentName" required>
+                </div>
+                <div class="form-group">
+                    <label for="parent-email">Email:</label>
+                    <input type="email" id="parent-email" name="parentEmail" required
+                           placeholder="parent@example.com"
+                           autocomplete="email"
+                           title="Please enter a valid email address">
+                </div>
+                <div class="form-group">
+                    <label for="child-year">Child's Year Group:</label>
+                    <select id="child-year" name="childYear" required>
+                        <option value="">Select Year</option>
+                        <option value="2">Year 2</option>
+                        <option value="3">Year 3</option>
+                        <option value="4">Year 4</option>
+                        <option value="5">Year 5</option>
+                        <option value="6">Year 6</option>
+                    </select>
+                </div>
+                <button type="button" id="start-assessment" class="cta-button">Start Assessment</button>
+            </form>
+
+            <div id="quiz-container" class="quiz-container" style="display: none;">
+                <div class="assessment-instructions">
+                    <p><strong>⏰ You have 8 minutes to complete this assessment.</strong></p>
+                    <p>Take your time, read each question carefully, and select the best answer.</p>
+                </div>
+                <div id="quiz-content"></div>
+                <button type="button" id="submit-quiz" class="cta-button" style="display: none;">Submit Assessment</button>
+            </div>
+
+            <div id="results-container" class="results-container" style="display: none;">
+                <h3>Assessment Results</h3>
+                <div id="score-display"></div>
+                <div id="feedback-display"></div>
+                <a href="#contact" class="cta-button">Book Your Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Comparison -->
+    <section id="pricing" class="section">
+        <div class="container">
+            <h2>Why We're Affordable</h2>
+            <div class="pricing-comparison">
+                <div class="pricing-item">
+                    <h3>Tuition Centre</h3>
+                    <p class="price">£25+/hr</p>
+                </div>
+                <div class="pricing-item">
+                    <h3>Private Tutor</h3>
+                    <p class="price">£39+/hr</p>
+                </div>
+                <div class="pricing-item highlight">
+                    <h3>Maths Mastery Club</h3>
+                    <p class="price">Affordable Excellence</p>
+                </div>
+            </div>
+            <p class="pricing-message">
+                <strong>"We believe every child deserves expert maths support, without the high price tag."</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- Trust & Credibility -->
+    <section id="trust" class="section bg-light">
+        <div class="container">
+            <h2>Trust & Credibility</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"The structured approach has really helped my daughter gain confidence in maths. Her progress is clearly visible."</p>
+                    <span class="testimonial-author">- Parent of Year 4 student</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Finally, maths support that doesn't break the bank but still delivers excellent results."</p>
+                    <span class="testimonial-author">- Parent of Year 5 student</span>
+                </div>
+            </div>
+            <div class="tutor-intro">
+                <h3>Expert Leadership</h3>
+                <p>Led by experienced maths teachers specialising in KS2 and 11+ preparation, with a deep understanding of how African and Nigerian children learn best.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing CTA -->
+    <section id="contact" class="section cta-section">
+        <div class="container">
+            <h2>Ready to Get Started?</h2>
+            <p>Book a free consultation to discuss your child's maths journey and how we can help them excel.</p>
+            <div class="contact-options">
+                <a href="https://wa.me/447459374009" class="cta-button primary">Contact Us on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Maths Mastery Club. Helping African & Nigerian children excel in maths across the UK.</p>
+        </div>
+    </footer>
+
+    <script src="data-handler.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

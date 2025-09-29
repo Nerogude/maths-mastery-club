@@ -1,0 +1,625 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typography */
+h1, h2, h3 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Sections */
+.section {
+    padding: 4rem 0;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.hero-description {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.95;
+}
+
+/* Buttons */
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.5rem;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+.cta-button.primary {
+    background-color: #27ae60;
+}
+
+.cta-button.primary:hover {
+    background-color: #219a52;
+}
+
+.cta-button.secondary {
+    background-color: #3498db;
+}
+
+.cta-button.secondary:hover {
+    background-color: #2980b9;
+}
+
+/* Pain Points Section */
+.pain-points {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.pain-point {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pain-point h3 {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+}
+
+.solution {
+    background: #27ae60;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* About Section */
+.about-description {
+    font-size: 1.3rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Benefits */
+.benefits-list {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.benefits-list li {
+    background: white;
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding-left: 3rem;
+    font-size: 1.1rem;
+}
+
+.benefits-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 1rem;
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* Assessment Form */
+.parent-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* Email validation styles */
+.form-group input.valid-email {
+    border-color: #27ae60 !important;
+    background-color: #f8fff9;
+}
+
+.form-group input.invalid-email {
+    border-color: #e74c3c !important;
+    background-color: #fdf2f2;
+}
+
+.form-group input.valid-email:focus {
+    box-shadow: 0 0 5px rgba(39, 174, 96, 0.3) !important;
+}
+
+.form-group input.invalid-email:focus {
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.3) !important;
+}
+
+/* Quiz Styles */
+.quiz-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.quiz-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.quiz-header h3 {
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+/* Timer Styles */
+.timer-container {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.timer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
+
+.timer-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+.sound-toggle {
+    background: none;
+    border: 2px solid #bdc3c7;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    margin-left: 1rem;
+}
+
+.sound-toggle:hover {
+    border-color: #3498db;
+    background: #ecf0f1;
+    transform: scale(1.05);
+}
+
+.sound-toggle:active {
+    transform: scale(0.95);
+}
+
+.timer-normal {
+    background: #27ae60;
+    color: white;
+}
+
+.timer-caution {
+    background: #f39c12;
+    color: white;
+}
+
+.timer-warning {
+    background: #e74c3c;
+    color: white;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+.timer-icon {
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.timer-progress {
+    width: 100%;
+    height: 8px;
+    background: #ecf0f1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.timer-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #27ae60 0%, #f39c12 70%, #e74c3c 100%);
+    width: 0%;
+    transition: width 0.5s ease;
+    border-radius: 4px;
+}
+
+.question {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.question h4 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+.options {
+    list-style: none;
+}
+
+.options li {
+    margin-bottom: 0.8rem;
+}
+
+.options input[type="radio"] {
+    margin-right: 0.8rem;
+}
+
+.options label {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Assessment Instructions */
+.assessment-instructions {
+    background: #e8f4fd;
+    border: 2px solid #3498db;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.assessment-instructions p {
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+/* Results */
+.results-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.time-spent {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-top: 0.5rem;
+}
+
+.score-display {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #27ae60;
+    color: white;
+    border-radius: 8px;
+}
+
+.feedback-display {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #ecf0f1;
+    border-radius: 8px;
+    text-align: left;
+}
+
+/* Pricing */
+.pricing-comparison {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.pricing-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pricing-item.highlight {
+    background: #27ae60;
+    color: white;
+    transform: scale(1.05);
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e74c3c;
+}
+
+.pricing-item.highlight .price {
+    color: white;
+}
+
+.pricing-message {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #2c3e50;
+}
+
+/* Testimonials */
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.testimonial {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: #7f8c8d;
+}
+
+.tutor-intro {
+    background: #34495e;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    text-align: center;
+}
+
+.cta-section h2 {
+    color: white;
+}
+
+.contact-options {
+    margin-top: 2rem;
+}
+
+/* Footer */
+.footer {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .pain-points {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-comparison {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-button {
+        width: 90%;
+        max-width: 300px;
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .section {
+        padding: 2rem 0;
+    }
+
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .hero-title {
+        font-size: 1.7rem;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Timer mobile styles */
+    .timer-display {
+        font-size: 1.1rem;
+    }
+
+    .timer-container {
+        padding: 0.8rem;
+    }
+
+    .quiz-header h3 {
+        font-size: 1.3rem;
+    }
+
+    .assessment-instructions {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .sound-toggle {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+        margin-left: 0.5rem;
+    }
+
+    .timer-header {
+        margin-bottom: 0.5rem;
+    }
+}
