@@ -3,9 +3,9 @@
 
 class GoogleSheetsLogger {
     constructor() {
-        // We'll set this up with your Google Apps Script URL
-        this.scriptURL = ''; // To be filled in after setup
-        this.enabled = false; // Enable after setup
+        // Google Apps Script URL for automatic data collection
+        this.scriptURL = 'https://script.google.com/macros/s/AKfycbyWKBVRO_9n_LRE-YY-gpNmeTz-nKB2SP841IYSe5NP4iVMwJTinphTvgR3dqF0aVDL/exec';
+        this.enabled = true; // Now enabled with your script URL
     }
 
     // Send assessment data to Google Sheets
